@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alien Abduction Order Form</title>
+	<link href="css/forms.css" rel="stylesheet">
+</head>
+<body>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+	<div class="wrapper">
+		<section>
+			<h1>Alien Abduction Order Form</h1>
+			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
+			<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
+				<input type="hidden" id="myhidden" name="send_to" value="tahminaahmed.rima@yahoo.com">
+				<fieldset>
+			<legend>Your contact information</legend>
+			<p>Your name 
+				<input type="text" id="fullname" name="name">
+			<label for= "phone">Phone number </label>
+				<input type="tel" id="phone" name="phone" placeholder="dont forget your area code">
+			<label for= "email">Email</label>
+			<input type="email" id="email" name="email">
+			</fieldset>
+
+			<fieldset>
+			<legend>About your abduction </legend>
+			<label for="date">Requested  date
+				<input type="date" id="date" name="date">
+			</label>
+			<label for= "qty">How many people would you like abducted?
+				<input type="number" id="qty" name="qty" min="1" max="10">
+			</label>
+			<p>What type of UFO do you prefer? </p>
+			<label>
+						<input type="radio" name="ufotype" value="classic"> Classic oval UFO
+			</label>
+			<label>
+					
+				<input type="radio" name="ufotype" value="starwars"> Star Wars-style Imperial cruiser
+			</label>
+			<label>
+					<input type="radio" name="ufotype" value="Battlestar" checked> Battlestar Galactica-style Viper
+			</label>
+				<label>
+					<input type="radio" name="ufotype" value="Borg-style"> Borg-style cube
+				</label> 
+				
+			
+			<label for="abtype">What type of abduction experience do you want?</label>
+				<select id="abtype" name="abtype">
+					<option selected> select one...</option>
+					<option value="tour">Tour of the solar system</option>
+					<option value="dinner">Alien dinner and discussion</option>
+					<option value="dance">Alien dance lessons</option>
+					<option value="watching">Whale watching</option>
+				</select> 
+			
+			<label for="comments">Special requests:</label>
+			<textarea id="comments" name="comments">Tell me about something </textarea>
+			<label>
+			<input type="checkbox" value="subscribe" name="subscribe" id="subscribe" checked> Add me to your email list! 
+		</label>
+		</fieldset>		
+		<button type="submit"> Share your Abduction Experience </button>
+		</form>
+		</section>
+		<aside>
+			<h3>Our Location</h3>
+			<address>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.678639279695!2d90.39695081942557!3d23.794774936885158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c70c15ea1de1%3A0x97856381e88fb311!2sBanani%20Model%20Town%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1598977132432!5m2!1sen!2sbd" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</address>
+		</aside>
+	</div>
+	<script src="js/forms.js"></script>
+</body>
+</html>
+
+
+
+
+
